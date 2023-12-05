@@ -11,7 +11,7 @@ Imports used:
 * data_extraction.py: FastAPI, boto3, io, numpy, pandas, requests, tabula
 * data_cleaning.py: datetime, calendar, string
     
-* Clone repo: git clone xxxx 
+* Clone repo: git clone https://github.com/CJ1608/Multinational-Retail-Data-Centralisation.git
 
 Install imports:
 * SQLAlchemy https://pypi.org/project/SQLAlchemy/
