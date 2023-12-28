@@ -17,15 +17,15 @@ Made using Python 3.11.6 and VS Code 1.84 and pgAdmin4 7.5
 * main.py
 * requirements
 * sql_files:
-      * Dim Card Details
-      * Dim Date Times
-      * Dim Products
-      * Dim Store Details
-      * Dim Users Table
-      * Foreign Keys
-      * Orders Table
-      * Primary Keys
-      * SQL Queries
+     * Dim Card Details
+     * Dim Date Times
+     * Dim Products
+     * Dim Store Details
+     * Dim Users Table
+     * Foreign Keys
+     * Orders Table
+     * Primary Keys
+     * SQL Queries
 
 ## Required Imports:
 * SQLAlchemy https://pypi.org/project/SQLAlchemy/
