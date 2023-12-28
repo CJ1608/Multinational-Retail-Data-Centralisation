@@ -1,11 +1,11 @@
 from fastapi import FastAPI
-# from database_utils import DatabaseConnector
 import boto3
 import io
 import numpy as np
 import pandas as pd
 import requests
 import tabula
+
 
 class DataExtractor():
     """
@@ -38,7 +38,6 @@ class DataExtractor():
         card_details = tabula.read_pdf("https://data-handling-public.s3.eu-west-1.amazonaws.com/card_details.pdf", pages='all')
         card_details = pd.concat(card_details)
         card_details.index = np.arange(0, len(card_details))
-        # print(card_details)
         return card_details
     
     api = FastAPI()
@@ -56,11 +55,10 @@ class DataExtractor():
         self.response = requests.get(api_link, headers=api_dict)
         print(self.response)
         self.num_stores = self.response.json().get('number_stores')
-        return self.num_stores #451
+        return self.num_stores 
 
-    def retrieve_stores_data(self): # api_link
+    def retrieve_stores_data(self): 
         """
-        TODO: WORKING ON!
         Get data from API get requests for every store (the number returned in list_number_of_stores) and return pandas 
         dataframe of the store details.
 
@@ -70,7 +68,6 @@ class DataExtractor():
         data = []
         print('Gathering information for this request. Please wait...')
         for store_number in range(self.num_stores):
-            # print(store_number)
             self.response = requests.get(f"https://aqj7u5id95.execute-api.eu-west-1.amazonaws.com/prod/store_details/{store_number}", headers=self.api_dict)
             data.append(self.response.json())       
         stores_data = pd.DataFrame(data)
@@ -103,6 +100,5 @@ class DataExtractor():
         """
         data = pd.read_json(url)
         data['index'] = range(0, len(data))
-        # print(data)
         return data 
 
