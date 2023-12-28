@@ -9,25 +9,23 @@ Made using Python 3.11.6 and VS Code 1.84 and pgAdmin4 7.5
 * Clone repo: git clone https://github.com/CJ1608/Multinational-Retail-Data-Centralisation.git
 
 ## File structure:
-* README.md
-* .gitignore
 * LICENSE
+* README.md
 * data_cleaning.py
 * data_extraction.py
 * database_utils.py
-* main.py: main file that calls methods from the 3 python files above.
-* requirements: packages and versions
-   * sql_files (T1-7: altering data types, T8-9: setting primary and foreign keys)
-        * T1 orders table.sql
-        * T2 dim users table.sql
-        * T3 dim store details.sql
-        * T4 dim products.sql
-        * T6(no5) dim date times.sql
-        * T7 dim card details.sql
-        * T8.sql
-        * T9.sql
-    * sql_data_queries (SQL querys)
-        * data_queries.sql
+* main.py
+* requirements
+* sql_files:
+      * Dim Card Details
+      * Dim Date Times
+      * Dim Products
+      * Dim Store Details
+      * Dim Users Table
+      * Foreign Keys
+      * Orders Table
+      * Primary Keys
+      * SQL Queries
 
 ## Required Imports:
 * SQLAlchemy https://pypi.org/project/SQLAlchemy/
