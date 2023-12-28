@@ -6,7 +6,7 @@ Project to gather information, clean it and publish it in one central PostgresQL
 ## Breakdown of Project: 
 
 ### Extract Data
-The data was extracted from different sources. Some of the information came from an Amazon Web Services database which involved connecting to the database using a SQLAlchemy engine. Some information was extracted using get API calls. The rest of the information came from S3 objects that ranged from pdfs, csv and json files which all needed to be extracted differently. 
+The data was extracted from different sources. Some of the information came from an Amazon Web Services database which involved connecting to the database using a SQLAlchemy engine. Some information was extracted using 'get' API calls. The rest of the information came from S3 objects that ranged from pdfs, csv and json files which all needed to be extracted differently. 
 
 ### Clean Data 
 The extracted data needed to be cleaned by doing certain tasks like removing null rows, converting the dates into the correct ISO8601 format and checking that non-null rows contained the correct information by checking the country code and other columns with standardised values. This helped to ensure that the information was clean, improving the data quality without losing too many records. It also made it easier to explore trends and get insights into the data. 
