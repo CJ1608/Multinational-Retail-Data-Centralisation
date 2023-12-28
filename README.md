@@ -16,10 +16,9 @@ Once the data had been uploaded to PostgresQL, each column had to be cast to the
 
 ### SQL Queries
 Some of SQL Queries performed were:
-![online sales](https://github.com/CJ1608/Multinational-Retail-Data-Centralisation/assets/128046995/d14c2924-c773-4dcb-956a-ab21e5026466)
-![month](https://github.com/CJ1608/Multinational-Retail-Data-Centralisation/assets/128046995/1292297d-63f5-4179-90b8-5855c85440e9)
+![image](https://github.com/CJ1608/Multinational-Retail-Data-Centralisation/assets/128046995/09aa8da2-7cbd-44d0-831b-9282334b91c6)
 
-
+![image](https://github.com/CJ1608/Multinational-Retail-Data-Centralisation/assets/128046995/18a6f180-58fb-483d-8a0d-91e1f6ae87e6)
 
 ## Installation instructions:
 Made using Python 3.11.6 and VS Code 1.84 and pgAdmin4 7.5
