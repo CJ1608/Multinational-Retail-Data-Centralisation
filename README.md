@@ -1,25 +1,12 @@
 # Multinational Retail Data Centralisation
 
 ## Project description:
-Training project to gather different data sources from Amazon Web Services (AWS) databases and S3 objects like pdfs, csv files, json files. Once the information is gathered it must be cleaned and pushed to one central database in PostgreSQL to be analysed. 
+Project to gather information, clean it and publish it in one central PostgresQL database. Data sources included an Amazon Web Services (AWS) databases and S3 objects like pdfs, csv files, json files.
 
 ## Installation instructions:
 Made using Python 3.11.6 and VS Code 1.84 and pgAdmin4 7.5
-
-Imports used: 
-* database_utils.py: sqlalchemy, yaml
-* data_extraction.py: FastAPI, boto3, io, numpy, pandas, requests, tabula
-* data_cleaning.py: datetime, calendar, string
-    
+* Check have all needed modules and packages installed. 
 * Clone repo: git clone https://github.com/CJ1608/Multinational-Retail-Data-Centralisation.git
-
-Install imports:
-* SQLAlchemy https://pypi.org/project/SQLAlchemy/
-* boto3 https://pypi.org/project/boto3/
-* numpy https://pypi.org/project/numpy/
-* pandas https://pypi.org/project/pandas/
-* requests https://pypi.org/project/requests/
-* tabula https://pypi.org/project/tabula-py/
 
 ## File structure:
 * README.md
@@ -42,13 +29,20 @@ Install imports:
     * sql_data_queries (SQL querys)
         * data_queries.sql
 
+## Required Imports:
+* SQLAlchemy https://pypi.org/project/SQLAlchemy/
+* boto3 https://pypi.org/project/boto3/
+* numpy https://pypi.org/project/numpy/
+* pandas https://pypi.org/project/pandas/
+* requests https://pypi.org/project/requests/
+* tabula https://pypi.org/project/tabula-py/
+  
 ## License information:
 Distributed under the MIT License. See LICENSE for more information. 
 
-
 ## Acknowledgements:
 * AiCore
-* https://choosealicense.com/ 
+* https://choosealicense.com/
 
 ## Learning resources used:
 ### Postgres
